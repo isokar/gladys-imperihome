@@ -15,6 +15,9 @@ To make this module work in Gladys, you need to :
 	- MQTT_PASSWORD => The password of the MQTT user
 - Reboot Gladys. In the logs you should see "Successfully connected to MQTT : YOUR_SERVER_URL" 
 
+This should looks like this : 
+
+![Gladys parameters](http://gladysproject.com/assets/images/external/gladys-param-mqtt-screenshot.jpg)
 
 ## Set up a MQTT broker
 
@@ -37,6 +40,7 @@ You could now fill this infos in Gladys.
 - MQTT_URL = mqtt://xxxx.cloudmqtt.com:PORT
 - MQTT_USERNAME = User in info panel
 - MQTT_USERNAME = Password in info panel
+
 
 ## Owntrack
 
