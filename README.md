@@ -40,18 +40,18 @@ You could now fill this infos in Gladys.
 
 ## Owntrack
 
-To play with owntrack to save your location in Gladys, you need to install the [iOS](https://itunes.apple.com/us/app/mqttitude/id692424691?mt=8) or [Android](https://play.google.com/store/apps/details?id=org.owntracks.android).
+To play with owntrack to save your location in Gladys, you need to install the [iOS](https://itunes.apple.com/us/app/mqttitude/id692424691?mt=8) or [Android](https://play.google.com/store/apps/details?id=org.owntracks.android) app.
 
-In "Preferences", go to "Connection" :
+In `Preferences`, go to `Connection`:
 
-- "Mode" => "Private MQTT",
-- "Host" => 
-	- "Host" = xxxx.cloudmqtt.com
-	- "Port" = SSL PORT (be careful, that's not the same port as before)
-- "Identification" => 
-	- "Username" => MQTTT username
-	- "Password" => MQTT Password
-	- "Device ID" => "whatever you want, name of your phone for example"
-	- "Tracker ID" => Your UserID in Gladys (very important !!), or the UserID you want to track
+- `Mode` => "Private MQTT",
+- `Host` => 
+	- `Host` = xxxx.cloudmqtt.com
+	- `Port` = SSL PORT (be careful, that's not the same port as before)
+- `Identification` => 
+	- `Username` => MQTTT username
+	- `Password` => MQTT Password
+	- `Device ID` => "whatever you want, name of your phone for example"
+	- `Tracker ID` => Your UserID in Gladys (very important !), or the UserID you want to track
 
 Then save, and you should see the message "Connected".
