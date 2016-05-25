@@ -34,9 +34,9 @@ This should looks like this :
 
 You could now fill this infos in Gladys.
 
-MQTT_URL = mqtt://xxxx.cloudmqtt.com:PORT
-MQTT_USERNAME = User in info panel
-MQTT_USERNAME = Password in info panel
+- MQTT_URL = mqtt://xxxx.cloudmqtt.com:PORT
+- MQTT_USERNAME = User in info panel
+- MQTT_USERNAME = Password in info panel
 
 ## Owntrack
 
@@ -45,7 +45,13 @@ To play with owntrack to save your location in Gladys, you need to install the [
 In "Preferences", go to "Connection" :
 
 - "Mode" => "Private MQTT",
-- "Host" => "Host" = xxxx.cloudmqtt.com, "Port" = SSL PORT (be careful, that's not the same port as before)
-- "Identification" => "Username" => MQTTT username, "Password" => MQTT Password, "Device ID" => "whatever you want, name of your phone for example", "Tracker ID" => Your UserID in Gladys (very important !!), or the UserID you want to track
+- "Host" => 
+	- "Host" = xxxx.cloudmqtt.com
+	- "Port" = SSL PORT (be careful, that's not the same port as before)
+- "Identification" => 
+	- "Username" => MQTTT username
+	- "Password" => MQTT Password
+	- "Device ID" => "whatever you want, name of your phone for example"
+	- "Tracker ID" => Your UserID in Gladys (very important !!), or the UserID you want to track
 
 Then save, and you should see the message "Connected".
