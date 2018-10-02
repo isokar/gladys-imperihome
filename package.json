@@ -1,14 +1,11 @@
 {
-  "name": "gladys-mqtt",
-  "version": "0.1.2",
-  "description": "Gladys hooks to connect to a MQTT broker",
+  "name": "gladys-imperihome",
+  "version": "0.0.2",
+  "description": "Gladys hooks to connect to ImperiHome interface",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Pierre-Gilles Leymarie",
-  "license": "CC-BY-NC-SA-3.0",
-  "dependencies": {
-    "mqtt": "^1.10.0"
-  }
+  "author": "Matthieu Lemaitre",
+  "license": "CC-BY-NC-SA-3.0"
 }
