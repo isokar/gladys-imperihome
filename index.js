@@ -1,20 +1,20 @@
+var getsystemcontroller = require('./controller/system.get.js');
+var getroomcontroller = require('./controller/rooms.get.js');
+var getdevicescontroller = require('./controller/devices.get.js');
+var getdevicesaction = require('./controller/devicesaction.get.js');
 
-var setup = require('./lib/setup');
-var init = require('./lib/init');
-var shared = require('./lib/shared');
-var systemcontroller = require('./controller/system.get');
 
 module.exports = function (sails) {
-    
-    gladys.on('ready', init)
 
     return {
-        setup,
-        init,
-        shared,
         routes: {
             after: {
-                'GET /system': systemcontroller
+                'GET /system': getsystemcontroller,
+		'GET /rooms': getroomcontroller,
+                'GET /devices': getdevicescontroller,
+		'GET /devices/:id/action/setStatus/:val': getdevicesaction,
+		'GET /devices/:id/action/setLevel/:val': getdevicesaction
+
             }
         }
     };
