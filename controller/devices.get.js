@@ -29,6 +29,9 @@ function finddevices(){
 //sails.log.info("id:"+param.devices[param.devices.length-1].id);
 param.devices.push({id:deviceType.id,name:deviceType.name,type:deviceType.tag,room:device.room.id,params:[]});
 switch(deviceType.tag) {
+	case "DevCamera":
+                param.devices[param.devices.length-1].params.push({key:"localmjpegurl",value:deviceType.identifier},{key:"remotemjpegurl",value:deviceType.identifier});
+                break;
     	case "DevThermostat":
 		param.devices[param.devices.length-1].params.push({key:"cursetpoint",value:deviceType.lastValue},{key:"curmode",value:"Man"},{key:"availablemodes",value:"Man,eco,nominal, gel"}); 
         	break;
