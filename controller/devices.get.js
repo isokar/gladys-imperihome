@@ -45,6 +45,9 @@ switch(deviceType.tag) {
 	case "DevElectricity":
                 param.devices[param.devices.length-1].params.push({key:"Level",value:deviceType.lastValue});
                 break;
+	case "DevShutter":
+                param.devices[param.devices.length-1].params.push({key:"Level",value:deviceType.lastValue},{key:"stopable",value:"1"},{key:"pulseable",value:"0"});
+                break;
 	default:
         	param.devices[param.devices.length-1].params.push({key:"Status",value:deviceType.lastValue},{key:"Value",value:deviceType.lastValue});
 };
